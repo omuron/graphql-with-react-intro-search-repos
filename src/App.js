@@ -15,7 +15,8 @@ const StarButton = props => {
           () => addStar({
               variables: { input: { starrableId: node.id } }
             })
-      }>
+        }
+      >
         {starCount} | {viewerHasStarred ? 'starred' : '-'}
       </button>
     )
